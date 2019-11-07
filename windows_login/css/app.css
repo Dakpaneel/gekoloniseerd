@@ -6,6 +6,10 @@ html * {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html body {
+  background: black;
+}
+
 html body .wrapper {
   position: absolute;
   top: 0;
