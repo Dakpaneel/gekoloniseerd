@@ -17,6 +17,22 @@ html {
             background: url('../media/background.jpg');
             background-position: center;
             background-size: cover;
+
+            .lock {
+                position: absolute;
+                bottom: 0;
+                padding: 10% 2%;
+                div {
+                    color: white;
+                    font-weight: 300;
+                    .time {
+                        font-size: 144px;
+                    }
+                    .date {
+                        font-size: 56px
+                    }
+                }
+            }
         }
     }
 }

@@ -20,4 +20,23 @@ html body .wrapper {
   background-position: center;
   background-size: cover;
 }
+
+html body .wrapper .lock {
+  position: absolute;
+  bottom: 0;
+  padding: 10% 2%;
+}
+
+html body .wrapper .lock div {
+  color: white;
+  font-weight: 300;
+}
+
+html body .wrapper .lock div .time {
+  font-size: 144px;
+}
+
+html body .wrapper .lock div .date {
+  font-size: 56px;
+}
 /*# sourceMappingURL=app.css.map */
