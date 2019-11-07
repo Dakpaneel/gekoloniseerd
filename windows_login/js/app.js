@@ -1,5 +1,15 @@
 window.onload = main;
 
+window.addEventListener("click", function() {
+    let lock = document.getElementById('lock');
+    let login = document.getElementById('login');
+    let background = document.getElementById('background');
+
+    lock.classList.add("inactive");
+    login.classList.add("active");
+    background.classList.add("faded");
+})
+
 function main() {
     displayDate();
     setInterval(function(){ 
@@ -8,8 +18,8 @@ function main() {
 }
 
 function displayDate() {
-    var d = new Date();
-    var days = [
+    let d = new Date();
+    let days = [
         "Sunday",
         "Monday",
         "Tuesday",
@@ -18,7 +28,7 @@ function displayDate() {
         "Friday",
         "Saturday"
     ];
-    var months = [
+    let months = [
         "January",
         "February",
         "March",
@@ -32,14 +42,14 @@ function displayDate() {
         "November",
         "December"
     ];
-    var minutes = d.getMinutes();
-    var hours = d.getHours();
+    let minutes = d.getMinutes();
+    let hours = d.getHours();
 
     if(minutes.toString().length == 1) minutes = '0'+minutes;
     if(hours.toString().length == 1) hours = '0'+hours;
     
-    var time = hours+':'+minutes;
-    var date = days[d.getDay()]+', '+months[d.getMonth()]+' '+d.getDate();
+    let time = hours+':'+minutes;
+    let date = days[d.getDay()]+', '+months[d.getMonth()]+' '+d.getDate();
     
     document.getElementById('time').innerHTML = time;
     document.getElementById('date').innerHTML = date;
